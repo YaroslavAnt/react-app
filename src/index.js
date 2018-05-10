@@ -7,13 +7,10 @@ import Page from './components/page'
 
 const store = createStore(allReducers);
 
-
 const search = document.querySelector('#search');
 search.addEventListener('keyup', function(){
 	console.log(this.value)
 })
-
-
 
 ReactDOM.render(
   <Provider store={store}>
