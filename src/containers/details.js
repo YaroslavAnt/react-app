@@ -1,13 +1,16 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import './details.css';
 
 class Details extends React.Component {
+    
     render(){
+        console.log(this)
         if(!this.props.client) {
             return <br/>
         }
         return(
-        <div className="wrapper">
+        <div className="wrapp">
 
             <img src={this.props.client.general.avatar} alt="" />
             <div className="container">
@@ -33,8 +36,9 @@ class Details extends React.Component {
 }
 function mapStateToProps(state){
     return {
-        client: state.active
+        client: state.active // возвращает объект 
     };
 }
 
-export default connect(mapStateToProps) (Details);
+export default connect(mapStateToProps) (Details); //получение данных из хранилища в компонент
+//export to components/page.js

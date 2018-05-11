@@ -1,0 +1,18 @@
+
+.wrapp img{
+    float: left;
+    width: 128px;
+    margin:  50px
+}
+.container{
+    margin-left: 250px;
+}
+.container h1{
+    margin-top: 50px
+}
+.container h3{
+    border-top: 1px solid #777;
+}
+.container span{
+    font-weight: bold;
+}

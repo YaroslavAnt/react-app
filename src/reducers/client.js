@@ -1,4 +1,5 @@
 export default function(){
+    //export to reducers/index.js
     return [
         {
           "general": {
